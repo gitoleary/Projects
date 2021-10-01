@@ -13,6 +13,7 @@ mpHands = mp.solutions.hands
 hands = mpHands.Hands()
 mpDraw = mp.solutions.drawing_utils
 
+#Variables
 ix = 0
 iy = 0
 tx = 0
@@ -38,12 +39,14 @@ while True:
                 #print(id, cx, cy)
                 if id == 4: #Index finger point
                     cv2.circle(img, (cx,cy), 15, (255,0,0), 3)
-                    tx = cx
-                    ty = cy
+                    tx = cx #thumb x
+                    ty = cy #thumb y
+
                 if id == 8: #Index finger point
                     cv2.circle(img, (cx,cy), 15, (255,0,0), 3)
-                    ix = cx
-                    iy = cy
+                    ix = cx #index x
+                    iy = cy #index y
+
                 if ix != 0 and iy != 0 and tx != 0 and ty != 0:
                     cv2.line(img, (ix, iy), (tx, ty), (255,0,0), 3)
                     distance = math.sqrt(abs(ty-iy)**2 + abs(tx-ix)**2)
@@ -76,3 +79,9 @@ while True:
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
+
+    """
+    TODO:
+        * Link to computer volume using pycaw
+        * Functionize remove DRY code
+    """
