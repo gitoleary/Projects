@@ -29,7 +29,7 @@ public class UserThread extends Thread{
 			server.broadcast(serverMessage, this);
 
 			String clientMessage;
-
+//
 			do{
 				clientMessage = reader.readLine();
 				serverMessage = "[" + userName + "]: " + clientMessage;
