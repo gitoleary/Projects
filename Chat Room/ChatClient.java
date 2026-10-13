@@ -34,6 +34,7 @@ public class ChatClient {
 		return this.userName;
 	}
 
+	// Main
 	public static void main(String[] args){
 		if(args.length < 2)return;
 
