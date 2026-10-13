@@ -2,7 +2,6 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
-//Comment
 public class UserThread extends Thread{
 	private Socket socket;
 	private ChatServer server;
