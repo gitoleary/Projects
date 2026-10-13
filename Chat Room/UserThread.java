@@ -20,7 +20,7 @@ public class UserThread extends Thread{
 
 			OutputStream output = socket.getOutputStream();
 			writer = new PrintWriter(output,true);
-
+// t
 			printUsers();
 
 			String userName = reader.readLine();
