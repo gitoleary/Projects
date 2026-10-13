@@ -1,6 +1,6 @@
 import java.io.*;
 import java.net.*;
-
+// something
 
 public class WriteThread extends Thread{
 	private PrintWriter writer;
