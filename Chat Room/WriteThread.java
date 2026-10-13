@@ -19,7 +19,7 @@ public class WriteThread extends Thread{
 			e.printStackTrace();
 		}
 	}
-
+// RUN
 	public void run(){
 		Console console = System.console();
 
